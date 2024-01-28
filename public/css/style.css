@@ -57,7 +57,7 @@ body {
   /* height: 100vh; */
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
-  /* background-color: #1d2943; */
+  background-color: #1d2943;
 }
 
 .hero_area .top_nav {
@@ -255,7 +255,7 @@ a:focus {
 }
 
 .slider_section .row {
-  height: 100vh;
+  height: 80vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -339,6 +339,7 @@ a:focus {
 
 .slider_section .idicator_container {
   position: relative;
+  top: -90px;
 }
 
 .slider_section ol.carousel-indicators {

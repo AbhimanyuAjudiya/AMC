@@ -107,15 +107,15 @@ function Home() {
           </div>
         </div>
         <div className="container idicator_container">
-          <ol className="carousel-indicators">
+        <ol className="carousel-indicators">
             <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              className="active"
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            className="active"
             ></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
+        </ol>
         </div>
       </div>
     </section>

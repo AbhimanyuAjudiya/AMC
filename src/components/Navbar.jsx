@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from "./Home";
-
+// import React, { useState } from "react";
 function Navbar() {
 
-    const [currActive, setCurrActive] = useState();
+    // const [currActive, setCurrActive] = useState();
     
   return (
     <div className="hero_area">
@@ -51,31 +48,36 @@ function Navbar() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav  ">
-                <li onClick={() => setCurrActive("home")} className={currActive === "home" ? "nav-item active" : "nav-item"}>
+                {/* <li onClick={() => setCurrActive("home")} className={currActive === "home" ? "nav-item active" : "nav-item"}> */}
+                <li className="nav-item">
                   <a className="nav-link" href="/">
                     Home <span className="sr-only">(current)</span>
                   </a>
                 </li>
-                <li onClick={() => setCurrActive("about")} className={currActive === "about" ? "nav-item active" : "nav-item"}>
-                  <a className="nav-link" href="about">
+                {/* <li onClick={() => setCurrActive("about")} className={currActive === "about" ? "nav-item active" : "nav-item"}> */}
+                <li className="nav-item">
+                  <a className="nav-link" href="/about">
                     {" "}
                     About
                   </a>
                 </li>
-                <li onClick={() => setCurrActive("service")} className={currActive === "service" ? "nav-item active" : "nav-item"}>
-                  <a className="nav-link" href="service">
+                {/* <li onClick={() => setCurrActive("service")} className={currActive === "service" ? "nav-item active" : "nav-item"}> */}
+                <li className="nav-item">
+                  <a className="nav-link" href="/service">
                     {" "}
                     Services{" "}
                   </a>
                 </li>
-                <li onClick={() => setCurrActive("product")} className={currActive === "product" ? "nav-item active" : "nav-item"}>
-                  <a className="nav-link" href="product">
+                {/* <li onClick={() => setCurrActive("product")} className={currActive === "product" ? "nav-item active" : "nav-item"}> */}
+                <li className="nav-item">
+                  <a className="nav-link" href="/product">
                     {" "}
                     Products{" "}
                   </a>
                 </li>
-                <li onClick={() => setCurrActive("contact")} className={currActive === "contact" ? "nav-item active" : "nav-item"}>
-                  <a className="nav-link" href="contact">
+                {/* <li onClick={() => setCurrActive("contact")} className={currActive === "contact" ? "nav-item active" : "nav-item"}> */}
+                <li className="nav-item">
+                  <a className="nav-link" href="/contact">
                     Contact us
                   </a>
                 </li>
@@ -89,11 +91,11 @@ function Navbar() {
         </div>
       </header>
       {/* <!-- end header section --> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
 
     </div>
   );
