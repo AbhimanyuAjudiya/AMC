@@ -53,7 +53,7 @@ function Home() {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod magna aliqua. Ut enim ad minim veniam
                     </p>
-                    <div className="btn-box">
+                    {/* <div className="btn-box">
                       <a href="" className="btn-1">
                         {" "}
                         Read more{" "}
@@ -61,7 +61,7 @@ function Home() {
                       <a href="" className="btn-2">
                         Get A Quote
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-md-5">
@@ -86,7 +86,7 @@ function Home() {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod magna aliqua. Ut enim ad minim veniam
                     </p>
-                    <div className="btn-box">
+                    {/* <div className="btn-box">
                       <a href="" className="btn-1">
                         {" "}
                         Read more{" "}
@@ -94,7 +94,7 @@ function Home() {
                       <a href="" className="btn-2">
                         Get A Quote
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-md-5">
