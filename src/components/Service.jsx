@@ -21,9 +21,9 @@ function Service(){
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                   enim ad minim veniam, quis nostr voluptate velit
                 </p>
-                <a href="">
+                {/* <a href="">
                   See More
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="box b2">
@@ -39,9 +39,9 @@ function Service(){
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                   enim ad minim veniam, quis nostr voluptate velit
                 </p>
-                <a href="">
+                {/* <a href="">
                   See More
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="box b3">
@@ -57,9 +57,9 @@ function Service(){
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                   enim ad minim veniam, quis nostr voluptate velit
                 </p>
-                <a href="">
+                {/* <a href="">
                   See More
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

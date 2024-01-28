@@ -33,11 +33,11 @@ function Product(){
               <img src="images/p-8.jpg" alt="" />
             </div>
           </div>
-          <div className="btn-box">
+          {/* <div className="btn-box">
             <a href="">
               See More
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     )

@@ -54,11 +54,11 @@ function Footer(){
 
             <div className="col-md-3">
               <div className="info_form ">
-                <h5>Newsletter</h5>
+                {/* <h5>Newsletter</h5>
                 <form action="">
                   <input type="email" placeholder="Enter your email" />
                   <button>Subscribe</button>
-                </form>
+                </form> */}
                 <div className="social_box">
                   <a href="">
                     <img src="images/fb.png" alt="" />
