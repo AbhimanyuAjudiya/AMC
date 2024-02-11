@@ -7,8 +7,8 @@ function Footer(){
             <div className="col-md-3">
               <div className="info_logo">
                 <a className="navbar-brand" href="/">
-                  <img src="images/info-logo.png" alt="" />
-                  <span>AMC</span>
+                  <img src="images/info-logo3.png" alt="" />
+                  {/* <span>AMC</span> */}
                 </a>
                 <p>
                   dolor sit amet, consectetur magna aliqua. Ut enim ad minim

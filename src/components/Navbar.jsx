@@ -28,8 +28,8 @@ function Navbar() {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg custom_nav-container">
             <a className="navbar-brand" href="/">
-              <img src="images/logo.png" alt="" />
-              <span>AMC</span>
+              <img src="images/logo7.png" alt="" />
+              {/* <span>AMC</span> */}
             </a>
             <button
               className="navbar-toggler"
