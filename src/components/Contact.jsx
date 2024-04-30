@@ -1,21 +1,76 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
 
+    const EMAIL_SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+    const EMAIL_TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+    const EMAIL_JS_PUBLIC_KEY = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
+
+    const [loading, setLoading] = useState(false);
 
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_7eny96c', 'template_v8kt3fc', form.current, '0NCAtG34JkW719ZYe')
+        const formData = new FormData(form.current);
+        let formEmpty = false;
+        formData.forEach((value) => {
+            if (!value) {
+                formEmpty = true;
+            }
+        });
+
+        if (formEmpty) {
+            toast.error("Please fill in all fields.", {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
+            return;
+        } 
+
+        setLoading(true);
+
+        emailjs.sendForm(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, form.current, EMAIL_JS_PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
             console.log("Email sent successfully!");
-        }, (error) => {
+            toast.success("Email sent successfully!", {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
+
+        })
+        .catch((error) => {
             console.log(error.text);
+            toast.error("Error sending email. Please try again later.", {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            })
+        })
+        .finally(() => {
+            setLoading(false);
         });
     };
     return (
@@ -49,7 +104,10 @@ function Contact() {
                             />
                         </div>
                         <div className=" ">
-                            <button type="submit">Send</button>
+                        <button type="submit" disabled={loading}>
+                            {loading ? 'Sending...' : 'Send'}
+                        </button>
+                            <ToastContainer />  
                         </div>
                         </div>
                     </div>
