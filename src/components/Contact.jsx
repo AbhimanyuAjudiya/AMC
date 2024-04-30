@@ -3,11 +3,11 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function Contact() {
+const EMAIL_SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+const EMAIL_TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+const EMAIL_JS_PUBLIC_KEY = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
 
-    const EMAIL_SERVICE_ID = import.meta.env.VITE_EMAIL_SERVICE_ID;
-    const EMAIL_TEMPLATE_ID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
-    const EMAIL_JS_PUBLIC_KEY = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
+function Contact() {
 
     const [loading, setLoading] = useState(false);
 
